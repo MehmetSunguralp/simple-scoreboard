@@ -117,7 +117,7 @@ hr {
 	margin: 5px;
 }
 
-#period-title {
+#period-title, #countdown-title {
 	margin: 0;
 	font-family: 'Verdana';
 	color: #eee;
@@ -154,7 +154,7 @@ hr {
 	font-size: 40px;
 }
 
-#start-count-btn {
+#start-time-btn {
 	padding: 5px 15px;
 	font-family: 'Verdana';
 	border-radius: 10px;
