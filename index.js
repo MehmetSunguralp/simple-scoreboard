@@ -94,5 +94,26 @@ function resetScore() {
 	period.textContent = periodCounter;
 }
 
+// Countdown timer			
 
+let minutes = 15;
+let seconds = 60;
+
+let time = document.getElementById('count-down');
+
+const startInterval = setInterval(updateCountdown, 1000);
+
+function updateCountdown() {
+	seconds--;
+	time.textContent = minutes + ':' + seconds;
+
+	if (minutes == 0 && seconds == 0) {
+		// Stop timer
+		clearInterval(startInterval);
+	} else if (seconds == 0) {
+		// Decrease minutes
+		seconds = 60;
+		minutes--;
+	}
+}
 
